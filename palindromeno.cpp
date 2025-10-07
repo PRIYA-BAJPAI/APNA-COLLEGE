@@ -19,7 +19,7 @@ bool palindrome(int n){
 }
 }
 int main(){
-     int n=050;
+     int n=151;
      if(palindrome(n)){
         cout<<"no. is a palindrome."<<endl;
      }else{

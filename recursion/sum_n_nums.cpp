@@ -13,3 +13,5 @@ int main(){
     cout<<"summation is "<<sum(n);
     return 0;
 }
+
+// TC = SC = O(n)

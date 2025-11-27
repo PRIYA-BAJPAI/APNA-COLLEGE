@@ -25,6 +25,14 @@ class list{
             head=newnode;
         }
     }
+    void printLL(){
+        node *temp=head;
+        while(temp!=NULL){
+            cout<<temp->data<<" -> ";
+            temp=temp->next;
+        }
+        cout<<"NULL"<<endl;
+    }
 };
 int main(){
     list l;
@@ -32,6 +40,6 @@ int main(){
     l.push_front(2);
     l.push_front(3);
     l.push_front(4);
-
+    l.printLL();
     return 0;
 }

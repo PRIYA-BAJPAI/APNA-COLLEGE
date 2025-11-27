@@ -36,6 +36,10 @@ class list{
         }
         node *temp=head;
         for(int i=0;i<pos-1;i++){
+            if(temp=NULL){
+                cout<<"Invalid position"<<endl;
+                return;
+            }
             temp=temp->next;
         }
         node *newnode=new node(val);

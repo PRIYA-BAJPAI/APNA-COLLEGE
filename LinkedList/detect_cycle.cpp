@@ -25,6 +25,11 @@ class list{
             tail=newnode;
         }
     }
+    void add_cycle(int val){
+        node *newnode=new node(val);
+        tail->next=newnode;
+        newnode->next=head->next->next;
+    }
     void printLL(){
         node *temp=head;
         while(temp!=NULL){
@@ -50,7 +55,8 @@ int main(){
     l.push_back(2);
     l.push_back(3);
     l.push_back(4);
-    l.printLL();
+    l.add_cycle(5);
+    //l.printLL();
     if(l.cycle()){
         cout<<"Cycle Available"<<endl;
     }else{

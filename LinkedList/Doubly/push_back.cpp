@@ -46,6 +46,11 @@ int main(){
     d.push_back(10);
     d.push_back(20);
     d.push_back(30);
+    d.push_back(40);
+    d.push_back(50);
+    d.push_back(60);
+    d.push_back(70);
+    cout<<"Elements are : \n";
     d.print();
     return 0;
 }

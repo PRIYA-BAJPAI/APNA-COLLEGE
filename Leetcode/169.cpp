@@ -11,3 +11,5 @@ void majorityElement(int nums[9]) {
         int num[9]={1,2,3,2,2,1,2,2,1};
         majorityElement(num[]);
     }
+
+    //update it

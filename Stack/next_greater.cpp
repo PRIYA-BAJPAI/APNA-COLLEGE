@@ -8,7 +8,7 @@ int main(){
     vector<int>ans(vec.size());
     int n=vec.size();
     for(int i=n-1;i>=0;i--){
-        while(!st.empty() && st.top()<vec[i]){
+        while(!st.empty() && st.top()<=vec[i]){
             st.pop();
         }
         if(st.empty()){
